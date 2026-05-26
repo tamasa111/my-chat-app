@@ -1,0 +1,6 @@
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/ChatClientApplication.java
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/controller/ChatController.java
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/controller/LoginController.java
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/model/MessageItem.java
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/network/ChatStompClient.java
+/home/admin/Development/codex/test-pro2/chat-client/src/main/java/com/chatapp/client/network/ChatWebSocketClient.java

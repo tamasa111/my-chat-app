@@ -1,0 +1,175 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color:
+        radial-gradient(radius 110%, rgba(39,70,132,0.36), transparent 45%),
+        linear-gradient(to bottom right, #0a0e16, #111827 45%, #0f1724);
+    -fx-text-fill: #ecf1fb;
+}
+
+.label {
+    -fx-text-fill: #ecf1fb;
+}
+
+.text-field, .password-field {
+    -fx-background-color: rgba(13, 20, 35, 0.92);
+    -fx-border-color: #2d3d60;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #75819b;
+    -fx-padding: 12 14;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #2d7cf9, #49a3ff);
+    -fx-text-fill: white;
+    -fx-background-radius: 999;
+    -fx-padding: 12 18;
+    -fx-font-weight: 700;
+}
+
+.ghost-button {
+    -fx-background-color: rgba(21, 30, 47, 0.92);
+    -fx-border-color: #2c3d60;
+    -fx-border-radius: 999;
+    -fx-background-radius: 999;
+    -fx-text-fill: #dbe7ff;
+    -fx-padding: 10 16;
+}
+
+.login-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 800;
+}
+
+.login-subtitle {
+    -fx-text-fill: #9ca8c0;
+}
+
+.status-label {
+    -fx-text-fill: #9ecbff;
+}
+
+.top-bar {
+    -fx-background-color: rgba(10, 16, 28, 0.82);
+    -fx-border-color: transparent transparent #1c2740 transparent;
+}
+
+.chat-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.sidebar {
+    -fx-background-color: rgba(12, 18, 31, 0.94);
+    -fx-border-color: transparent transparent transparent #1a243b;
+}
+
+.sidebar-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+}
+
+.sidebar-hint {
+    -fx-text-fill: #8c99b3;
+    -fx-font-size: 12px;
+}
+
+.sidebar-user {
+    -fx-font-weight: 600;
+}
+
+.unread-count {
+    -fx-text-fill: #ff6666;
+    -fx-font-weight: 800;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 8 6;
+}
+
+.message-list .scroll-bar:vertical,
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.bubble-own {
+    -fx-background-color: linear-gradient(to bottom right, #2d7cf9, #1f5ed6);
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+
+.bubble-other {
+    -fx-background-color: rgba(248, 250, 255, 0.98);
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: #d6deef;
+}
+
+.bubble-other .label {
+    -fx-text-fill: #102036;
+}
+
+.bubble-own .label {
+    -fx-text-fill: white;
+}
+
+.message-sender {
+    -fx-font-weight: 800;
+}
+
+.message-content {
+    -fx-font-size: 14px;
+}
+
+.message-meta {
+    -fx-font-size: 11px;
+    -fx-text-fill: #a6b3ca;
+}
+
+.bubble-other .message-meta {
+    -fx-text-fill: #55657f;
+}
+
+.system-message {
+    -fx-font-style: italic;
+    -fx-text-fill: #97a4bc;
+    -fx-padding: 8 0;
+}
+
+.composer-wrap {
+    -fx-background-color: rgba(10, 16, 28, 0.88);
+    -fx-border-color: #1c2740 transparent transparent transparent;
+}
+
+.upload-label {
+    -fx-text-fill: #9fb7d8;
+}
+
+.progress-bar {
+    -fx-accent: #2d7cf9;
+}
+
+.file-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+}
+
+.download-button {
+    -fx-background-color: rgba(255, 255, 255, 0.14);
+    -fx-background-radius: 999;
+    -fx-text-fill: inherit;
+    -fx-padding: 8 14;
+}

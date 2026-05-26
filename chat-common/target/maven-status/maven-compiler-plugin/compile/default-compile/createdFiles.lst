@@ -1,0 +1,9 @@
+com/chatapp/common/model/UserListMessage.class
+com/chatapp/common/model/UserListMessage$UserStatus.class
+com/chatapp/common/model/LoginRequest.class
+com/chatapp/common/model/FileMessage.class
+com/chatapp/common/MessageSerializer.class
+com/chatapp/common/model/SystemMessage.class
+com/chatapp/common/model/ChatMessage.class
+com/chatapp/common/model/LoginResponse.class
+com/chatapp/common/model/TextMessage.class

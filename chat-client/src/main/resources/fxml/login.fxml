@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="14.0"
+      stylesheets="@../css/styles.css"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.chatapp.client.controller.LoginController">
+    <padding>
+        <Insets bottom="28.0" left="28.0" right="28.0" top="28.0"/>
+    </padding>
+    <Label styleClass="login-title" text="Chat Application"/>
+    <Label styleClass="login-subtitle" text="Connect to your chat server"/>
+    <TextField fx:id="serverUrlField" promptText="Server URL"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <Button defaultButton="true" onAction="#onLogin" styleClass="primary-button" text="Connect"/>
+    <Label fx:id="statusLabel" styleClass="status-label" textFill="#ef8a8a"/>
+</VBox>

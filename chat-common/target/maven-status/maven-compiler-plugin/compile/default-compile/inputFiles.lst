@@ -1,0 +1,8 @@
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/MessageSerializer.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/ChatMessage.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/FileMessage.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/LoginRequest.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/LoginResponse.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/SystemMessage.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/TextMessage.java
+/home/admin/Development/codex/test-pro2/chat-common/src/main/java/com/chatapp/common/model/UserListMessage.java

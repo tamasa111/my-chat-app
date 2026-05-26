@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <style>
+        body {
+            background: #0e1320;
+            color: #f4f7fb;
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 32px;
+        }
+        .panel {
+            max-width: 960px;
+            margin: 0 auto;
+            background: rgba(19, 27, 44, 0.95);
+            border: 1px solid #25324c;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 10px;
+            border-bottom: 1px solid #25324c;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #2f7cf6;
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+        }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+        .active {
+            background: rgba(58, 200, 126, 0.18);
+            color: #7cf3b2;
+        }
+        .inactive {
+            background: rgba(255, 91, 91, 0.18);
+            color: #ff9f9f;
+        }
+        .flash {
+            margin-top: 14px;
+            color: #9ed2ff;
+        }
+    </style>
+</head>
+<body>
+<div class="panel">
+    <h1>Users</h1>
+    <p>Default admin login: <strong>admin</strong> / <strong>admin123</strong></p>
+    <a class="button" th:href="@{/users/new}">Create User</a>
+    <div class="flash" th:if="${message}" th:text="${message}"></div>
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Status</th>
+            <th>Created</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.username}"></td>
+            <td>
+                <span class="badge"
+                      th:classappend="${user.active} ? ' active' : ' inactive'"
+                      th:text="${user.active} ? 'Active' : 'Inactive'"></span>
+            </td>
+            <td th:text="${#dates.format(new java.util.Date(user.createdAt), 'yyyy-MM-dd HH:mm')}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

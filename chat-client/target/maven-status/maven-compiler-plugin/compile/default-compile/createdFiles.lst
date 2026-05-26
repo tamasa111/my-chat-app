@@ -1,0 +1,14 @@
+com/chatapp/client/controller/ChatController$UserEntry.class
+com/chatapp/client/controller/ChatController$2.class
+com/chatapp/client/network/ChatWebSocketClient.class
+com/chatapp/client/network/ChatStompClient$SessionHandler.class
+com/chatapp/client/controller/LoginController.class
+com/chatapp/client/network/ChatStompClient$Listener.class
+com/chatapp/client/controller/ChatController$1.class
+com/chatapp/client/controller/ChatController.class
+com/chatapp/client/controller/ChatController$UserCell.class
+com/chatapp/client/ChatClientApplication.class
+com/chatapp/client/network/ChatStompClient$1.class
+com/chatapp/client/controller/ChatController$MessageCell.class
+com/chatapp/client/model/MessageItem.class
+com/chatapp/client/network/ChatStompClient.class
