@@ -4,3 +4,6 @@
 .DS_Store
 chat-server.db
 uploads/
+target/
+chat-server/target/
+chat-client/target/
