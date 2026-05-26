@@ -31,7 +31,7 @@
         input {
             width: 100%;
             box-sizing: border-box;
-            margin-bottom: 18px;
+            margin-bottom: 8px;
             padding: 12px 14px;
             border-radius: 12px;
             border: 1px solid #2b3b5d;
@@ -54,16 +54,36 @@
             color: #9fd0ff;
             margin-left: 12px;
         }
+        .error-summary {
+            margin: 0 0 18px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: rgba(201, 59, 59, 0.16);
+            border: 1px solid rgba(255, 120, 120, 0.32);
+            color: #ffb6b6;
+        }
+        .field-error {
+            margin: 0 0 14px;
+            font-size: 13px;
+            color: #ffb6b6;
+        }
     </style>
 </head>
 <body>
 <form th:action="@{/users}" method="post" th:object="${form}">
     <h1>Create User</h1>
+
+    <div class="error-summary" th:if="${#fields.hasGlobalErrors()}">
+        <div th:each="error : ${#fields.globalErrors()}" th:text="${error}"></div>
+    </div>
+
     <label for="username">Username</label>
     <input id="username" type="text" th:field="*{username}" required>
+    <div class="field-error" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
 
     <label for="password">Password</label>
     <input id="password" type="password" th:field="*{password}" required>
+    <div class="field-error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
 
     <button type="submit">Create</button>
     <a th:href="@{/users}">Back</a>
